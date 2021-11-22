@@ -5,7 +5,7 @@ folder=$2
 
 if [[ ! $(id $username) ]]; 
     if [ ! -d "$folder" ]; 
-        chown -R $username:$username $folder
+        sudo  chown -R $username:$username $folder
         echo "complete"
         exit
     then
